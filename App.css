@@ -1,0 +1,107 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&family=MonteCarlo&family=Montserrat&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,300&family=Quicksand&family=Roboto+Slab:wght@500&display=swap');
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+
+
+font-family: 'Montserrat', sans-serif;
+
+
+
+}
+body{
+    font-size: 100%;
+}
+.timer-container{
+background-image: url('./assets/timebg.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+color:white;
+width:100vw;
+height:100vh;
+}
+.timer{
+    background-color: rgba(0, 0, 0, 0.5);
+    display:flex;
+    flex:column;
+    align-items:center;
+    justify-content:center;
+    padding-bottom: 7em;
+    padding-top:2em;
+    width:100%;
+    height:100%;
+}
+.timer div:first-child{
+    text-align:center;
+}
+.timer-icon{
+    font-size: 8em;
+
+}
+h2{
+    font-weight:600;
+    margin-bottom:0.5em
+}
+.timer div:first-child p{
+    color:#f8f8f8;
+}
+.timer div:last-child{
+    border:1px solid rgb(255, 255, 255) ;
+    border-radius:3px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    margin-top:3em;
+    
+    padding: 3em;
+    text-align: center;
+}
+section p:first-child,.timer div:last-child span{
+    font-size: 3em;
+}
+.box{
+    align-items: center;
+    position:relative;
+    top:190px;
+    right:290px;
+    color:rgb(255, 255, 255); 
+    
+  
+  
+}
+.calendar{
+    position: relative;
+    left:300px;
+    color:rgb(255, 255, 255);
+}
+#content{
+    position: relative;
+    left:300px;
+    color:rgb(255, 255, 255); 
+}
+#content p{
+    color:rgb(255, 255, 255); 
+}
+@media only screen and (max-width: 600px){
+    .timer div:last-child{
+        margin-left:2em;
+        margin-right: 2em;
+       padding:10%;
+        top:50%;
+        
+}
+.box{
+    margin-left:50%;
+    position:relative;
+    top:190px;
+    float:right;
+
+    color:rgb(255, 255, 255); 
+    
+  
+  
+}
+}
